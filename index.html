@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl-BE">
 
 <head>
     <!--
@@ -18,63 +18,115 @@
     <meta property="og:image" content="https://placehold.co/1200x630/png?text=Magic+Pixels" />
     <meta name="theme-color" content="#0d0d0d" />
 
+    <link rel="stylesheet" href="styles/normalize-min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div class="wrap">
-        <header>
-            <h1 class="brand" aria-label="Daniel Shilin — Magic Pixels">
-                <span class="dot" aria-hidden="true"></span>
-                Daniel Shilin — Magic Pixels
-            </h1>
-            <p class="subtitle">A simple hub for my projects. Click a thumbnail to see the project in detail.</p>
-        </header>
-
-        <!-- PROJECTS GRID -->
-        <section class="grid" aria-label="Projects">
-            <!-- TEMPLATE: duplicate this block and customize -->
-            <a class="card" href="/projects/hosst/" rel="noopener noreferrer">
-                <div class="thumb" aria-hidden="true">
-                    <img src="/images/hosst-thumbnail.webp" alt="Hosst Website thumbnail" loading="lazy" />
-                </div>
-                <div class="caption">
-                    <div class="title">Hosst Website</div>
-                    <div class="meta">Course-inspired project, redesigned to reflect my own style and improvements.
-                    </div>
-                </div>
+    <header>
+        <nav class="nav collapsible">
+            <a class="logo-container" href="/">
+                <img src="images/magic-pixels-web-logo.svg" alt="hosst logo cloud" class="logo">
             </a>
-            <a class="card" href="/projects/heart&root/" rel="noopener noreferrer">
+            <img class="icon nav__toggler icon-menu" src="images/menu-svgrepo-com.svg" alt="menu icon">
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="/index.html#services">Diensten</a></li>
+                <li class="nav__item"><a href="/index.html#projects">Projecten</a></li>
+                <li class="nav__item"><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="card" href="/projects/hosst/" rel="noopener noreferrer">
                 <div class="thumb" aria-hidden="true">
-                    <img src="/images/heart&root2.png" alt="heart & root thumbnail" loading="lazy" />
+                    <img src="/images/office-selfie.webp" alt="Hosst Website thumbnail" loading="lazy" />
                 </div>
-                <div class="caption">
-                    <div class="title">Heart & Root</div>
-                    <div class="meta">Brand and logo for Heart & Root.</div>
-                </div>
-            </a><a class="card" href="/projects/memory_game/" rel="noopener noreferrer">
-                <div class="thumb" aria-hidden="true">
-                    <img src="/images/memorygame.webp" alt="memory game thumbnail" loading="lazy" />
-                </div>
-                <div class="caption">
-                    <div class="title">Memory Game</div>
-                    <div class="meta">I made a memory game for a school project.</div>
-                </div>
-            </a>
+                <h1 class="brand" aria-label="Daniel Shilin — Magic Pixels">
+                    <span class="dot" aria-hidden="true"></span>
+                    Welkom bij Magic Pixels
+                </h1>
+                </>
 
-            <!-- add more cards below as needed -->
-        </section>
+            </div>
+            <section id="services" aria-label="Diensten">
+                <header>
+                    <h2 aria-label="Diensten">
+                        Diensten
+                    </h2>
+                    <p class="subtitle">Een lijst van mijn aanbod diensten.</p>
+                </header>
+                <ul>
+                    <li>IT ondersteuning en consultatie</li>
+                    <li>Grafisch ontwerp</li>
+                    <li>Website ontwerp en ontwikkeling</li>
+                    <li>Digitale reclame</li>
+                </ul>
+            </section>
 
-        <footer>
-            <span>© <span id="y"></span> Magic Pixels</span>
-            <span><a href="mailto:magicpixels.pro@gmail.com" style="color:inherit">magicpixels.pro@gmail.com</a></span>
-        </footer>
-    </div>
+            <section id="projects" aria-label="Projecten">
+                <header>
+                    <h2 aria-label="Projecten">
+                        Projecten
+                    </h2>
+                    <p class="subtitle">Klik een project om het in detail te zien.</p>
+                </header>
+                <div class="grid">
+                    <!-- TEMPLATE: duplicate this block and customize -->
+                    <a class="card" href="/projects/hosst/" rel="noopener noreferrer">
+                        <div class="thumb" aria-hidden="true">
+                            <img src="/images/hosst-thumbnail.webp" alt="Hosst Website thumbnail" loading="lazy" />
+                        </div>
+                        <div class="caption">
+                            <div class="title">Hosst Website</div>
+                            <div class="meta">Cursusproject, herontworpen om mijn stijl en verbeteringen te tonen.</div>
+                        </div>
+                    </a>
+                    <a class="card" href="/projects/heart&root/" rel="noopener noreferrer">
+                        <div class="thumb" aria-hidden="true">
+                            <img src="/images/heart&root2.png" alt="heart & root thumbnail" loading="lazy" />
+                        </div>
+                        <div class="caption">
+                            <div class="title">Heart & Root</div>
+                            <div class="meta">Brand en logo voor Heart & Root.</div>
+                        </div>
+                    </a>
+                    <a class="card" href="/projects/memory_game/" rel="noopener noreferrer">
+                        <div class="thumb" aria-hidden="true">
+                            <img src="/images/memorygame.webp" alt="memory game thumbnail" loading="lazy" />
+                        </div>
+                        <div class="caption">
+                            <div class="title">Memory Spel</div>
+                            <div class="meta">Ik heb een memory spel gamaakt voor een schoolproject.</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- add more cards below as needed -->
+            </section>
 
-    <script>
-        // tiny util: keep copyright year current
-        document.getElementById('y').textContent = new Date().getFullYear();
-    </script>
+            <section id="contact" aria-label="Contact">
+                <header>
+                    <h2 aria-label="Contact">
+                        Contact
+                    </h2>
+                </header>
+                <p>Voor prijzen, offertes of vragen kunt u mij liefst contacteren via e-mail, maar telefonisch kan ook:
+                </p>
+                <div>Daniel Shilin</div>
+                <a href="mailto:daniel@magicpixels.pro">daniel@magicpixels.pro</a>
+                <div>+32 (0)487 61 05 92</div>
+                <div>BTW BE 1022.055.247</div>
+            </section>
+    </main>
+
+    <footer>
+        <span>© <span id="year"></span> Magic Pixels</span>
+        <span><a href="mailto:daniel@magicpixels.pro">daniel@magicpixels.pro</a></span>
+    </footer>
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
